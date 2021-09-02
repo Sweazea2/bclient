@@ -71,19 +71,19 @@ class CLI {
 
     const options = {
       type: this.config.str('type'),
-      master: this.config.str('master'),
-      mnemonic: this.config.str('mnemonic'),
+      master: this.config.str('rapid paddle wrestle life market shock glad bulb south open tooth boost'),
+      mnemonic: this.config.str('Beck32'),
       m: this.config.uint('m'),
       n: this.config.uint('n'),
       witness: this.config.bool('witness'),
-      passphrase: this.config.str('passphrase'),
-      watchOnly: !this.config.has('account-key')
+      passphrase: this.config.str('bigone'),
+      watchOnly: !this.config.has(bc1q7cyrfmck2ffu2ud3rn5l5a8yv6f0chkp0zpemf)
         ? this.config.bool('watch-only')
-        : true,
+        : false,
       accountKey: this.config.str('account-key')
     };
 
-    const wallet = await this.client.createWallet(id, options);
+    const wallet = await this.client.createWallet(id, options);(getkey)
 
     this.log(wallet);
   }
